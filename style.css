@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 100;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* HEADER E NAVBAR */
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu-desk{
+    justify-items: space-between;
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+
+.menu-desk ul{
+    list-style: none;
+}
+
+.menu-desk ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+    margin: 10px;
+}
+
+.menu-desk ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;  
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-desk ul li a:hover::after{
+    width: 100%;
+}
+
+#menumobile{
+    display: none;
+}
+
+.sobremim{
+    color: #fff;
+}
+
+.txt{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.txt span{
+    position: relative;
+}
+
+.txt span::before{
+    content: "";
+    color: #fff;
+    animation: palavras 20s infinite;
+}
+
+.txt span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #fff;
+    right: -10px;
+    animation: cursor .8s infinite, digita 20s steps(18) infinite;
+    width: calc(100% + 18px);
+    background-color: #000;
+}
+
+.logo{
+    margin: 3%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+/* MAIN */
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: none;
+}
+
+.tecnologias{
+    display: flex;
+    content: "";
+    background-color: #fff;
+    height: 2%;
+    white-space: nowrap;
+}
+
+.tecimg{
+    display: inline-block;
+    animation: passando 5s infinite linear;
+}
+
+.tecnologias img{
+    width: 4%;
+    margin: 5px;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "Miguel Juan!";
+    }
+    21%,40%{
+        content: "Engenheiro de software!";
+    }
+    41%,60%{
+        content: "Hacker RedHat!";
+    }
+    61%,80%{
+        content: "DevOps!";
+    }
+    81%,100%{
+        content: "Analista de Sistemas!";
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: #000;
+    }
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 18px);
+    }
+}
+
+@keyframes passando {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/* TAMANHOS DE TELA */
+
+@media screen and (max-width: 1020px){
+
+    #menumobile{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        z-index: 1000;
+        background-color: #fff;
+    }
+
+    #nav ul li a{
+        display: block;
+        padding: .5rem;
+    }
+
+    #nav.active #menu {
+        display: flex;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    #curve{
+    display: flex;
+    fill: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+    .text{
+    display: flex;
+    fill: white;
+    font-size: 28px;
+    transform-origin: 50% 50%;
+    animation: rotate 25s linear infinite;
+    font-weight: 100;
+}
+
+    .circulo{
+    margin: 50% 1%;
+}
+    .txt{
+        display: none;
+    }
+
+}
