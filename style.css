@@ -77,7 +77,7 @@ header{
 
 .txt span::before{
     content: "";
-    color: #fff;
+    color: #ff0000;
     animation: palavras 20s infinite;
 }
 
@@ -105,6 +105,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10%;
+}
+
+.h2principal{
+    display: flex;
+    justify-content: center;
 }
 
 .text{
@@ -117,6 +123,8 @@ header{
     background-color: #fff;
     height: 2%;
     white-space: nowrap;
+    gap: 12%;
+    overflow: hidden;
 }
 
 .tecimg{
@@ -126,7 +134,8 @@ header{
 
 .tecnologias img{
     width: 4%;
-    margin: 5px;
+    margin: 5px 10px;
+
 }
 
 /* ANIMAÇÕES */
@@ -145,16 +154,16 @@ header{
         content: "Miguel Juan!";
     }
     21%,40%{
-        content: "Engenheiro de software!";
+        content: "Engenheiro!";
     }
     41%,60%{
-        content: "Hacker RedHat!";
+        content: "Hacker!";
     }
     61%,80%{
         content: "DevOps!";
     }
     81%,100%{
-        content: "Analista de Sistemas!";
+        content: "Analista!";
     }
 }
 
