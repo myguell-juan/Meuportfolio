@@ -94,10 +94,17 @@ header{
 
 .logo{
     margin: 3%;
+    margin-top: 50px;
 }
 
 .logo img{
-    width: 100px;
+    width: 30%;
+}
+
+.slogan{
+    font-size: 120%;
+    font-weight: 200;
+    margin-left: -55%;
 }
 
 /* MAIN */
@@ -136,6 +143,15 @@ header{
     width: 4%;
     margin: 5px 10px;
 
+}
+
+.sobre{
+    box-sizing: border-box;
+    margin: 10%;
+}
+
+.sobre p{
+    color: #fff;
 }
 
 /* ANIMAÇÕES */
@@ -195,6 +211,13 @@ header{
 
 @media screen and (max-width: 1020px){
 
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5%;
+    }
+
     #menumobile{
         display: block;
     }
@@ -209,6 +232,10 @@ header{
         background-color: #fff;
     }
 
+    .menu-desk{
+        justify-content: space-around;
+    }
+
     #nav ul li a{
         display: block;
         padding: .5rem;
@@ -218,20 +245,32 @@ header{
         display: flex;
     }
 
+    .slogan{
+        display: none;
+    }
+
+    .logo{
+        margin-top: 10%;
+    }
+
+    .logo img{
+        width: 23%;
+    }
+
     main{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #curve{
     display: flex;
-    fill: transparent;
+    fill: url('elementos/minhafoto.png');
     justify-content: center;
     align-items: center;
 }
 
     .text{
     display: flex;
-    fill: white;
+    fill: #fff;
     font-size: 28px;
     transform-origin: 50% 50%;
     animation: rotate 25s linear infinite;
@@ -243,6 +282,18 @@ header{
 }
     .txt{
         display: none;
+    }
+
+    .h2principal{
+        margin-top: -50%;
+    }
+
+    .h2principal span{
+        color: #ff0000;
+    }
+
+    .tecnologias{
+        gap: 70%;
     }
 
 }
