@@ -40,7 +40,7 @@ header{
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    color: #000;
+    color: #fff;
     margin: 10px;
 }
 
@@ -104,9 +104,12 @@ header{
 }
 
 .slogan{
-    font-size: 120%;
-    font-weight: 200;
-    margin-left: -55%;
+    color: #fff;
+}
+
+.slogan:hover{
+    color: #ff0000;
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -141,7 +144,7 @@ header{
 .tecimg{
     margin: -60 0;
     display: inline-block;
-    animation: passando 30s infinite linear;
+    animation: passando 25s infinite linear;
     gap: 100px;
 }
 
@@ -152,6 +155,7 @@ header{
 .sobre{
     box-sizing: border-box;
     margin: 10%;
+    height: calc(100vh - 60vh);
 }
 
 .sobre p{
@@ -180,11 +184,12 @@ header{
 
 .tec22{
     display: inline-block;
-    animation: passandor 90s infinite linear;
+    animation: passandor 130s infinite linear;
 }
 
 .tec2txt{
     display: inline-block;
+    font-size: 20px;
 }
 
 .tec2txt span{
