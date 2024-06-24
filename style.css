@@ -174,8 +174,17 @@ header{
     color: #fff;
     display: flex;
     white-space: nowrap;
+    overflow: hidden;
     margin-top: 0.5%;
-    animation: passandor 30s infinite linear;
+}
+
+.tec22{
+    display: inline-block;
+    animation: passandor 90s infinite linear;
+}
+
+.tec2txt{
+    display: inline-block;
 }
 
 .tec2txt span{
@@ -230,7 +239,7 @@ header{
 
 @keyframes passando {
     from{
-        transform: translateX(100);
+        transform: translateX(0);
     }
     to{
         transform: translateX(-100%);
@@ -239,9 +248,9 @@ header{
 
 @keyframes passandor {
     from{
-        transform: translateX(-100%);
+        transform: translateX(-170%);
     }to{
-        transform: translateX(0%);
+        transform: translateX(100%);
     }
 }
 
@@ -329,7 +338,6 @@ header{
         width: 100%;
         height: 100%;
         animation: rotate 10s linear infinite;
-        z-index: ;
     }
 
     .textc span{
@@ -351,5 +359,9 @@ header{
 
     .h2principal span{
         color: #ff0000;
+    }
+
+    .tec22{
+        animation: passandor 110s linear infinite;
     }
 }
