@@ -15,7 +15,7 @@ body{
 header{
     width: 100%;
     height: 80px;
-    background-color: #fff;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,7 @@ header{
     content: " ";
     width: 0%;
     height: 2px;  
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,12 +64,13 @@ header{
 }
 
 .sobremim{
-    color: #fff;
+    color: #000000;
 }
 
 .txt{
     font-size: 45px;
     font-weight: 300;
+    
 }
 
 .txt span{
@@ -90,7 +91,7 @@ header{
     right: -10px;
     animation: cursor .8s infinite, digita 20s steps(18) infinite;
     width: calc(100% + 18px);
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 .logo{
@@ -115,6 +116,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 95vh;
+    background-color: #fff;
 }
 
 .h2principal{
@@ -132,19 +134,19 @@ header{
     background-color: #fff;
     height: 2%;
     white-space: nowrap;
-    gap: 12%;
     overflow: hidden;
+    gap: 10px;
 }
 
 .tecimg{
+    margin: -60 0;
     display: inline-block;
-    animation: passando 5s infinite linear;
+    animation: passando 30s infinite linear;
+    gap: 100px;
 }
 
 .tecnologias img{
-    width: 4%;
-    margin: 5px 10px;
-
+    width: 30px;
 }
 
 .sobre{
@@ -155,6 +157,32 @@ header{
 .sobre p{
     color: #fff;
 }
+
+.eumobile1{
+    display: none;
+}
+
+.circle{
+    display: none;
+}
+
+.ola{
+    display: none;
+}
+
+.tec2{
+    color: #fff;
+    display: flex;
+    white-space: nowrap;
+    margin-top: 0.5%;
+    animation: passandor 30s infinite linear;
+}
+
+.tec2txt span{
+    color: #ff0000;
+    font-weight: 600;
+}
+
 
 /* ANIMAÇÕES */
 
@@ -202,10 +230,18 @@ header{
 
 @keyframes passando {
     from{
-        transform: translateX(0);
+        transform: translateX(100);
     }
     to{
         transform: translateX(-100%);
+    }
+}
+
+@keyframes passandor {
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0%);
     }
 }
 
@@ -230,10 +266,10 @@ header{
         display: none;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 80px;
         right: 0px;
         z-index: 1000;
-        background-color: #fff;
+        background-color: #000000;
     }
 
     .menu-desk{
@@ -243,6 +279,7 @@ header{
     #nav ul li a{
         display: block;
         padding: .5rem;
+        color: #fff;
     }
 
     #nav.active #menu {
@@ -315,9 +352,4 @@ header{
     .h2principal span{
         color: #ff0000;
     }
-
-    .tecnologias{
-        gap: 70%;
-    }
-
 }
