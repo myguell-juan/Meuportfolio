@@ -174,29 +174,28 @@ header{
     display: none;
 }
 
-.tec2{
-    color: #fff;
+.linha2{
     display: flex;
     white-space: nowrap;
     overflow: hidden;
-    margin-top: 0.5%;
+    content: " ";
+    height: 2%;
 }
 
-.tec22{
-    display: inline-block;
-    animation: passandor 130s infinite linear;
+.formacoes{
+    animation: passandor 90s infinite linear;
 }
 
-.tec2txt{
+.formtxt{
+    color: #fff;
     display: inline-block;
     font-size: 20px;
 }
 
-.tec2txt span{
+.formtxt span{
     color: #ff0000;
-    font-weight: 600;
+    font-size: 25px;
 }
-
 
 /* ANIMAÇÕES */
 
@@ -253,9 +252,7 @@ header{
 
 @keyframes passandor {
     from{
-        transform: translateX(-170%);
-    }to{
-        transform: translateX(100%);
+        transform: translateX(calc(100% - 150%));
     }
 }
 
