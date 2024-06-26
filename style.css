@@ -131,6 +131,15 @@ header{
     display: none;
 }
 
+.social{
+    margin: 0 10px;
+}
+
+.icone img{
+    width: 4%;
+    display: inline-block;
+}
+
 .tecnologias{
     display: flex;
     content: "";
@@ -353,6 +362,11 @@ header{
 
     .txt{
         display: none;
+    }
+
+    .ola{
+        margin-bottom: 100px;
+        color: red;
     }
 
     .h2principal{
