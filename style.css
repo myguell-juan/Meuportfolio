@@ -70,7 +70,6 @@ header{
 .txt{
     font-size: 45px;
     font-weight: 300;
-    
 }
 
 .txt span{
@@ -129,15 +128,6 @@ header{
 
 .text{
     display: none;
-}
-
-.social{
-    margin: 0 10px;
-}
-
-.icone img{
-    width: 4%;
-    display: inline-block;
 }
 
 .tecnologias{
@@ -228,7 +218,7 @@ header{
         content: "Hacker!";
     }
     61%,80%{
-        content: "DevOps!";
+        content: "Dev FullStack!";
     }
     81%,100%{
         content: "Analista!";
