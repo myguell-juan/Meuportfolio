@@ -157,8 +157,15 @@ header{
     height: calc(100vh - 59vh);
 }
 
-.sobre p{
+.sobre1 {
     color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.sobre1 span{
+    color: #ff0000;
 }
 
 .eumobile1{
@@ -194,6 +201,28 @@ header{
 .formtxt span{
     color: #ff0000;
     font-size: 25px;
+}
+
+.sobre1 img{
+    width: 25%;
+    border-radius: 20px;
+    border: 2.5px solid #ff0000;
+}
+
+.sobre2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre2 span{
+    color: #ff0000;
+}
+
+.sobre2 img{
+    width: 25%;
+    border-radius: 20px;
+    border: 2.5px solid #ff0000;
 }
 
 /* ANIMAÇÕES */
