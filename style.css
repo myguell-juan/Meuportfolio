@@ -156,7 +156,7 @@ header{
 .sobre{
     box-sizing: border-box;
     margin: 10%;
-    height: 100vh
+    height: 110vh
 }
 
 .sobre1 {
@@ -218,6 +218,7 @@ header{
     display: flex;
     justify-content: center;
     font-size: 20px;
+    gap: 2%;
 }
 
 .sobre2 span{
@@ -230,6 +231,114 @@ header{
     border-radius: 20px;
     border: 2.5px solid #ff0000;
 }
+
+.sobre3{
+    display: flex;
+    color: #FFF;
+    gap: 2%;
+    font-size: 20px;
+}
+
+.sobre3 span{
+    color: #ff0000;
+    font-size: 25px;
+}
+
+.container-skills {
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    background: #000;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    user-select: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .container-skills .skill-box {
+    width: 100%;
+    margin: 25px 0;
+  }
+  
+  .skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF0000;
+  }
+  
+  .skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #FFF;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .skill-per.html {
+    /*progresso de HTML*/
+    width: 80%;
+    animation-delay: 0.1s;
+  }
+  
+  .skill-per.css {
+    /*progresso de CSS*/
+    width: 75%;
+    animation-delay: 0.1s;
+  }
+  
+  .skill-per.Python {
+    /*progresso de Python*/
+    width: 40%;
+    animation-delay: 0.2s;
+  }
+  
+  .skill-per.JavaScript {
+    /*progresso de JavaScript*/
+    width: 70%;
+    animation-delay: 0.3s;
+  }
+  
+
+  
+  .skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #000000;
+  
+    z-index: 1;
+  }
+  
+  .tooltip::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background: #000000;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
 
 /* PROJETOS */
 
@@ -313,7 +422,18 @@ header{
     from{
         transform: translateX(calc(100% - 150%));
     }
-}
+}  
+
+@keyframes progress {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 /* TAMANHOS DE TELA */
 
@@ -437,6 +557,16 @@ header{
 
     .sobre2{
         gap: 7%;
+    }
+
+    .sobre{
+        height: 210vh;
+        font-size: 15%;
+    }
+
+    .contairner-skills{
+        width: 130%;
+        height: 80%;
     }
 
 }
