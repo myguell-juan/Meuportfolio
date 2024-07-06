@@ -8,3 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     menumobile.addEventListener('click', toggleMenu);
 });
+
+document.addEventListener("zoom", function(){
+    var zomm = document.getElementsByClassName('')
+}
+)

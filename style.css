@@ -10,7 +10,11 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-/* HEADER E NAVBAR */
+html{
+    overscroll-behavior: none;
+}
+
+/* __HEADER E NAVBAR__ */
 
 header{
     width: 100%;
@@ -111,7 +115,7 @@ header{
     cursor: pointer;
 }
 
-/* MAIN */
+/* __MAIN__ */
 
 .principal{
     display: flex;
@@ -151,12 +155,12 @@ header{
     width: 30px;
 }
 
-/* SOBRE */
+/* __SOBRE__ */
 
 .sobre{
     box-sizing: border-box;
     margin: 10%;
-    height: 110vh
+    height: 100vh
 }
 
 .sobre1 {
@@ -352,15 +356,120 @@ header{
 
 /* ___PROJETOS___ */
 
-.projetos{
-    background-color: #ff0000;
+::-webkit-scrollbar{
+    display: none;
+}
+
+html, body{
+    font-family: "Neue Montreal";
     height: 100vh;
+}
+
+.row h1{
     color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.row p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.projetos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
-    font-size: 100px;
+    width: 100%;
+    z-index: 2;
+}
+
+.letters{
+    flex: 1;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.letters > div {
+    flex: 1;
+    font-size: 10vw;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.website-content{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.img-holder{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
+    transform: rotate(30deg);
+}
+
+.img-holder img{
+    position: relative;
+    transform: scale(2);
+}
+
+.content-holder{
+    position: relative;
+    top: -5px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 1em;
+}
+
+.row{
+    margin: 2em 1em;
+}
+
+.img{
+    width: 200px;
+    height: 275px;
+}
+
+.row:nth-child(2) .img{
+    position: relative;
+    left: 50%;
+}
+
+.row:nth-child(3) .img{
+    position: relative;
+    left: 15%;
+}
+
+.row:nth-child(4) .img{
+    position: relative;
+    left: 70%;
+}
+
+.row:nth-child(6) p{
+    position: relative;
+    left: 30%;
+    margin: 4em 0;
 }
 
 /* ___CONTATO___ */
@@ -402,7 +511,7 @@ header{
     top: 0;
     border-top: none;
     border-radius: 0 0 1rem 1rem;
-    box-shadow: 0px 0px 10px 5px #ff0000);
+    box-shadow: (0px 0px 10px 5px #ff0000);
   }
   
   .card-top-para {
@@ -466,9 +575,15 @@ header{
   .fotocont {
     width: 100px;
   }
-  
+
+  /* __FOOTER__ */
+  footer{
+    color: #fff;
+  }
+
 
 /* ___ANIMAÇÕES___ */
+
 
 @keyframes rotate{
     from{
