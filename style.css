@@ -550,22 +550,22 @@ header{
     align-items: center;
   }
 
-  .icones{
-    margin-left: 192px;
-    margin-top: 172px;
+  .icones0{
+    margin-left: 193px;
+    margin-top: 142px;
   }
 
-  .icones img{
-    width: 28%;
+  .icones0 img{
+    width: 27%;
     display: block;
     margin-bottom: 14px;
   }
 
-  .icones .w img{
+  .icones0 .w img{
     width: 20px;
   }
 
-  .icones img:hover{
+  .icones0 img:hover{
     color: #FFF;
     background-color: #fff;
   }
@@ -790,6 +790,10 @@ header{
 
     .card{
         display: block;
+    }
+
+    .contatoil{
+        display: none;
     }
 
 }
