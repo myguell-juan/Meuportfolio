@@ -529,6 +529,7 @@ header{
   }
 
   .contatoil{
+    content: "";
     height: 75vh;
     width: 30%;
     background-image: url(elementos/hand-holding-phone-mockup.png);
@@ -537,11 +538,6 @@ header{
     border-radius: 20px;
     display: grid;
     place-items: center;
-  }
-
-  .contatoil img{
-    width: 60%;
-    border-radius: 20px;
   }
 
   .moldura{
