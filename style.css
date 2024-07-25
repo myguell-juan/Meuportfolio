@@ -305,7 +305,7 @@ header{
   
   .skill-per.Python {
     /*progresso de Python*/
-    width: 40%;
+    width: 75%;
     animation-delay: 0.2s;
   }
   
@@ -359,6 +359,20 @@ header{
 .projetos{
     height: 100vh;
     background-color: #ff0000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.projetos h1:hover{
+    color: #000;
+    cursor: pointer;
 }
 
 /* ___CONTATO___ */
@@ -379,6 +393,7 @@ header{
   }
   
   .card {
+    display: none;
     width: 100%;
     height: 100%;
     background: #000;
@@ -455,6 +470,8 @@ header{
     width: 40px;
   }
 
+  /* CONTATODESK */
+
   .cont{
     display: flex;
     align-items: center;
@@ -465,7 +482,96 @@ header{
     width: 100px;
   }
 
+  .contatodesk{
+    background-color: #282832;
+    border-radius: 20px;
+    position: relative;
+    height: 75vh;
+    width: 30%;
+    display: block;
+  }
+
+  .contatodesk h2 span{
+    color: #ff0000;
+    font-weight: 600;
+  }
+
+  .contatodesk h2{
+    color: #fff;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    margin: 50px 0 0px 50px;
+  }
+
+  .inputs{
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+
+  .contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contatodesk input{
+    font-size: 200%;
+    display: block;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    position: relative;
+  }
+
+  .label{
+    color: #ff0000;
+  }
+
+  .contatoil{
+    height: 75vh;
+    width: 30%;
+    background-image: url(elementos/hand-holding-phone-mockup.png);
+    background-size: cover;
+    display: block;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+  }
+
+  .contatoil img{
+    width: 60%;
+    border-radius: 20px;
+  }
+
+  .moldura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icones{
+    margin-left: 192px;
+    margin-top: 172px;
+  }
+
+  .icones img{
+    width: 28%;
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  .icones .w img{
+    width: 20px;
+  }
+
+  .icones img:hover{
+    color: #FFF;
+    background-color: #fff;
+  }
+ 
   /* __FOOTER__ */
+
   footer{
     color: #fff;
   }
@@ -674,6 +780,16 @@ header{
     .contairner-skills{
         width: 130%;
         height: 80%;
+    }
+
+    /* CONTATO */
+
+    .contatodesk{
+        display: none;
+    }
+
+    .card{
+        display: block;
     }
 
 }
