@@ -158,6 +158,7 @@ header{
 /* __SOBRE__ */
 
 .sobre{
+    content: "";
     box-sizing: border-box;
     margin: 10%;
     height: 100vh
@@ -501,27 +502,40 @@ header{
     font-size: 40px;
     display: block;
     font-weight: 600;
-    margin: 50px 0 0px 50px;
+    margin: 20px 0px 0px 50px;
   }
 
   .inputs{
+    content: "";
     margin-top: 50px;
     margin-left: 40px;
   }
 
-  .contato{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .contatodesk input{
-    font-size: 200%;
+    width: 85%;
+    height: 30px;
     display: block;
     background-color: #fff;
     margin-bottom: 10px;
     border-radius: 40px;
     position: relative;
+  }
+
+  .mensagem{
+    display: block;
+    border-radius: 20px;
+    width: 85%;
+  }
+
+  .enviar{
+    cursor: pointer;
+    margin-top: 12px;
+    border-radius: 12px;
+    width: 90px;
+    height: 30px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff0000;
   }
 
   .label{
@@ -540,13 +554,8 @@ header{
     place-items: center;
   }
 
-  .moldura{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .icones0{
+    content: "";
     margin-left: 193px;
     margin-top: 142px;
   }
@@ -555,10 +564,7 @@ header{
     width: 27%;
     display: block;
     margin-bottom: 14px;
-  }
-
-  .icones0 .w img{
-    width: 20px;
+    border-radius: 16px;
   }
 
   .icones0 img:hover{

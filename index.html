@@ -240,29 +240,34 @@
 
     <section class="contato" id="Contato"><!--INICIO CONTATO-->
 
-      
-
       <container class="contatodesk">
 
         <h2><span>Vamos</span> Conversar!</h2>
         
         <div class="inputs">
-          <label class="label">Nome:
-            <input type="text">
-          </label>
+          <form action="https://api.staticforms.xyz/submit" method="post">
 
-          <label class="label">Email:
-            <input type="email">
-          </label>
+            <!----API EMAIL MYGUELL.JUAN@GMAIL.COM---->
+            <input type="hidden" name="accessKey" value="c6049d18-0d87-45fe-b577-36a72767896f">
 
-          <label class="label">Número:
-            <input type="text">
-          </label>
+            <label class="label">Nome:
+              <input type="text" nome="nome" placeholder="Digite seu nome" autocomplete="off">
+            </label>
+  
+            <label class="label">Email:
+              <input type="email" nome="email" placeholder="Digite seu email" autocomplete="off">
+            </label>
+  
+            <label class="label">Número:
+              <input type="text" nome="numero" placeholder="Digite seu número" autocomplete="off">
+            </label>
+  
+            <label class="label">Mensagem:</label>
+              <textarea class="mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off"></textarea>
+            
+            <button class="enviar" type="submit">Enviar</button>
 
-          <label class="label">Mensagem:
-            <input type="text">
-          </label>
-
+          </form>
         </div>
       </container>
 
