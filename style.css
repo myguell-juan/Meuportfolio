@@ -409,7 +409,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 10%;
-    position: absolute;
+    /* position: absolute; */
     width: 50%;
     background-color: transparent;
     border: 2px solid #ff0000;
@@ -436,7 +436,7 @@ header{
     border: #ff0000 solid 2px;
     border-radius: 2rem;
     box-shadow: 0px 0px 10px 5px #ff0000;
-    position: absolute;
+    /* position: absolute; */
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -471,7 +471,7 @@ header{
     width: 40px;
   }
 
-  /* CONTATODESK */
+  /* __CONTATODESK__ */
 
   .cont{
     display: flex;
@@ -486,7 +486,7 @@ header{
   .contatodesk{
     background-color: #282832;
     border-radius: 20px;
-    position: relative;
+    /* position: relative; */
     height: 75vh;
     width: 30%;
     display: block;
@@ -518,7 +518,7 @@ header{
     background-color: #fff;
     margin-bottom: 10px;
     border-radius: 40px;
-    position: relative;
+    /* position: relative; */
   }
 
   .mensagem{

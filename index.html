@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="logo"><!--INICIO LOGO-->
-                <img src="elementos/minha-foto.svg">
+                <img src="elementos/minha-logo.png">
         </div><!--FIM LOGO-->
         <div class="slogan">Ideias que se tornam Software.</div>
         <button id="menumobile">menu</button>
@@ -245,25 +245,23 @@
         <h2><span>Vamos</span> Conversar!</h2>
         
         <div class="inputs">
-          <form action="https://api.staticforms.xyz/submit" method="post">
 
-            <!----API EMAIL MYGUELL.JUAN@GMAIL.COM---->
-            <input type="hidden" name="accessKey" value="c6049d18-0d87-45fe-b577-36a72767896f">
+          <form action="processar-dados.php" method="POST">
 
             <label class="label">Nome:
-              <input type="text" nome="nome" placeholder="Digite seu nome" autocomplete="off">
+              <input type="text" nome="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
             </label>
   
             <label class="label">Email:
-              <input type="email" nome="email" placeholder="Digite seu email" autocomplete="off">
+              <input type="email" nome="email" id="email" placeholder="exemplo@gmail.com" autocomplete="off" required>
             </label>
   
             <label class="label">Número:
-              <input type="text" nome="numero" placeholder="Digite seu número" autocomplete="off">
+              <input type="text" nome="numero" id="numero" placeholder="com DDD" autocomplete="off" required>
             </label>
   
             <label class="label">Mensagem:</label>
-              <textarea class="mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off"></textarea>
+            <textarea class="mensagem" name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off" required></textarea>
             
             <button class="enviar" type="submit">Enviar</button>
 
