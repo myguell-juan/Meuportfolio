@@ -158,6 +158,7 @@ header{
 /* __SOBRE__ */
 
 .sobre{
+    position: relative;
     content: "";
     box-sizing: border-box;
     margin: 10%;
@@ -436,7 +437,7 @@ header{
     border: #ff0000 solid 2px;
     border-radius: 2rem;
     box-shadow: 0px 0px 10px 5px #ff0000;
-    /* position: absolute; */
+    position: absolute;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -663,18 +664,17 @@ header{
         top: 0;
     }
 
-    #menumobile{
-        display: block;
-    }
-
     #menu{
-        display: none;
+        display: block;
         position: absolute;
         width: 100%;
         top: 80px;
         right: 0px;
+        transition: .6s;
         z-index: 1000;
         background-color: #000000;
+        visibility: hidden;
+        overflow-y: hidden;
     }
 
     .menu-desk{
@@ -688,7 +688,36 @@ header{
     }
 
     #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menumobile{
         display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem
+    }
+
+    #hamburguer{
+        content: "";
+        display: block;
+        width: 20px;
+        border-top: 2px;
+        color: #FFF;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
     }
 
     .slogan{
@@ -750,12 +779,13 @@ header{
     }
 
     .ola{
-        margin-bottom: 100px;
+        margin-right: 64px;
+        position: relative;
         color: red;
     }
 
     .h2principal{
-        margin-top: -50%;
+        display: block;
     }
 
     .h2principal span{
@@ -766,13 +796,7 @@ header{
         animation: passandor 110s linear infinite;
     }
 
-    .sobre1{
-        gap: 7%;
-    }
-
-    .sobre2{
-        gap: 7%;
-    }
+    /* __SOBRE__ */
 
     .sobre{
         height: 210vh;
@@ -784,7 +808,9 @@ header{
         height: 80%;
     }
 
-    /* CONTATO */
+    /* __PROJETOS-MOBILE__ */
+
+    /* __CONTATO__ */
 
     .contatodesk{
         display: none;
@@ -796,6 +822,10 @@ header{
 
     .contatoil{
         display: none;
+    }
+
+    .card-top{
+        position: absolute;
     }
 
 }
