@@ -18,19 +18,22 @@
                 <img src="elementos/minha-logo.png">
         </div><!--FIM LOGO-->
         <div class="slogan">Ideias que se tornam Software.</div>
-        <button id="menumobile">menu
 
-          <span id="hamburguer"></span>
-        </button>
         <nav class="menu-desk" id="nav"><!--INICIO MENU-DESK-->
-            <ul id="menu"><!--INICIO MENU-->
-                <li>
-                    <a href="#Inicio">Inicio</a>
-                    <a href="#Sobre">Sobre</a>
-                    <a href="#Projetos">Projetos</a>
-                    <a href="#Contato">Contato</a>
-                </li>
-            </ul><!--FIM MENU-->
+
+          <button id="menumobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+
+            <span id="hamburguer"></span>
+          </button>
+
+          <ul id="menu" role="menu"><!--INICIO MENU-->
+            <li>
+              <a href="#Inicio">Inicio</a>
+              <a href="#Sobre">Sobre</a>
+              <a href="#Projetos">Projetos</a>
+              <a href="#Contato">Contato</a>
+            </li>
+          </ul><!--FIM MENU-->
         </nav><!--FIM MENU-DESK-->
     </header>
 
@@ -346,6 +349,11 @@
     <footer>
       by: migueljuandev
     </footer>
+
+    <div id="efeito">
+      <div class="cima"></div>
+      <div class="baixo"></div>
+    </div>
 
     <script src="main.js"></script>
 </body>
