@@ -7,7 +7,7 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -16,7 +16,7 @@
   <!-- CSS/JS -->
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js"></script>
-  <title>Miguel's portfolio</title>
+  <title>Miguel Juan</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVT6QBFVHW"></script>
@@ -29,14 +29,32 @@
   </script>
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="elementos/minha-logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="elementos/minha-logobranca.png" type="image/x-icon">
 
 <body>
-    <header>
+
+  <section class="loading-page">
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+      <path d="M140.078 274.504L162.318 315.015L121 314.755L140.078 274.504Z" fill="black"/>
+      <path d="M140.078 274.504L162.318 315.015L121 314.755L140.078 274.504Z" fill="black"/>
+      <path id="meiopreto" d="M144.104 142.782L189.204 134.383L293.499 314.042L237.529 313.69L144.104 142.782Z" fill="black"/>
+      <path id="meiovermelho" d="M258.175 137.509L303.477 130.277L398.116 311.093L347.157 310.772L258.175 137.509Z" fill="#FF0000"/>
+      <path d="M412.145 340.485L411.791 396.585L359.23 340.151L412.145 340.485Z" fill="#FF0000"/>
+      </svg>
+
+      <div class="name-container">
+        <div class="logo-name">Ideias que se tornam software</div>
+      </div>
+  </section>
+
+    <header id="cabeca">
+      <a href="#Inicio">
         <div class="logo"><!--INICIO LOGO-->
-                <img src="elementos/minha-logo.png">
+          <img src="elementos/minha-logo.png">
         </div><!--FIM LOGO-->
-        <div class="slogan">Ideias que se tornam Software.</div>
+      </a>
+        
+        <div class="slogan"><p>Ideias que se tornam Software.</p></div>
 
         <nav class="menu-desk" id="nav"><!--INICIO MENU-DESK-->
 
@@ -179,16 +197,16 @@
         <br>
         <br>
 
-        <div class="sobre2"><!--INICIO SOBRE2-->
+        <section class="sobre2"><!--INICIO SOBRE2-->
             <p><span>Meu</span> trabalho se dá através de boas práticas de programação, aplicando nos projeto que desenvolvo toda a bagagem de conhecimento de adquiri atráves das faculdades que fiz e faço. Priorizo sempre um trabalho de qualidade aplicando certificação de nível 5 do <span>TMMi</span>. Além disso, reuniões diárias para o companhamento do desevolvimento do projeto são essenciais para mim.</p>
             <img src="elementos/clipboard.svg">
-        </div><!--FIM SOBRE2-->
+        </section><!--FIM SOBRE2-->
 
         <br>
         <br>
         <br>
 
-        <div class="sobre3"><!--INICIO SOBRE3-->
+        <section class="sobre3"><!--INICIO SOBRE3-->
 
             <div class="container-skills">
 
@@ -254,7 +272,7 @@
 
             </div>  
             <p><span>Nível</span> das minhas linguagens de programação baseado em baseado em projetos anteriores, minhas impressões e feedbacks de colegas de profissão, turma e professores.</p>            
-        </div><!--FIM SOBRE3-->
+        </section><!--FIM SOBRE3-->
     </section><!--FIM SOBRE-->
 
     <section class="projetos" id="Projetos"><!--INICIO PROJETOS-->
@@ -317,7 +335,7 @@
         </div>
       </div>
 
-        <div class="container">
+        <section class="container">
           <div class="card">
             <div class="front">
               <div class="card-top">
@@ -360,7 +378,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
     </section><!--FIM CONTATO-->
 
     <hr>
@@ -368,11 +386,6 @@
     <footer>
       by: migueljuandev
     </footer>
-
-    <div id="efeito">
-      <div class="cima"></div>
-      <div class="baixo"></div>
-    </div>
 
     <script src="main.js"></script>
 </body>
