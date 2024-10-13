@@ -172,7 +172,7 @@ header.rolagem{
     content: "";
     box-sizing: border-box;
     margin: 10%;
-    height: 100vh
+    height: 130vh
 }
 
 .sobre1 {
@@ -862,8 +862,23 @@ header.rolagem{
     /* __SOBRE__ */
 
     .sobre{
-        height: 210vh;
+        height: 220vh;
         font-size: 15%;
+    }
+
+    .sobre1{
+        margin-top: 15%;
+        gap: 10%;
+    }
+
+    .sobre2{
+        margin-top: 15%;
+        gap: 10%;
+    }
+
+    .sobre3{
+        margin-top: 15%;
+        gap: 10%;
     }
 
     .contairner-skills{
