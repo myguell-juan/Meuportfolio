@@ -599,10 +599,14 @@ header.rolagem{
     background-color: #FFF;
     position: absolute;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: -10rem;
+  }
+
+  #svg{
+    margin-left: -10%;
   }
 
   .name-container{
@@ -688,9 +692,9 @@ header.rolagem{
 
 @keyframes loader{
     0%{
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }100%{
-        trasnform: rotate(360deg)
+        trasnform: rotateY(360deg)
     }
 }
 
@@ -704,6 +708,10 @@ header.rolagem{
         display: grid;
         place-items: center;
         overflow: hidden;
+    }
+
+    #svg{
+        margin-left: -25%;
     }
 
     header{
