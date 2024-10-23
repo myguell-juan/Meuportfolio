@@ -38,8 +38,8 @@
       <path d="M140.078 274.504L162.318 315.015L121 314.755L140.078 274.504Z" fill="black"/>
       <path d="M140.078 274.504L162.318 315.015L121 314.755L140.078 274.504Z" fill="black"/>
       <path id="meiopreto" d="M144.104 142.782L189.204 134.383L293.499 314.042L237.529 313.69L144.104 142.782Z" fill="black"/>
-      <path id="meiovermelho" d="M258.175 137.509L303.477 130.277L398.116 311.093L347.157 310.772L258.175 137.509Z" fill="#FF0000"/>
-      <path d="M412.145 340.485L411.791 396.585L359.23 340.151L412.145 340.485Z" fill="#FF0000"/>
+      <path id="meiovermelho" d="M258.175 137.509L303.477 130.277L398.116 311.093L347.157 310.772L258.175 137.509Z" fill="#c90a02"/>
+      <path d="M412.145 340.485L411.791 396.585L359.23 340.151L412.145 340.485Z" fill="#c90a02"/>
       </svg>
 
       <div class="name-container">
@@ -76,12 +76,16 @@
 
     <main class="principal" id="Inicio"><!--INICIO PRINCIPAL-->
 
-        <div class="sobremim"><!--INICIO SOBREMIM-->
+        <section class="sobremim"><!--INICIO SOBREMIM-->
             <h1 class="h2principal">Bem<span>Vindo!</span></h1>
             <div class="txt"><!--INICIO TXT-->
                 <h1>Olá, Eu sou <span></span></h1>
             </div><!--FIM TXT-->
-        </div><!--INICIO SOBREMIM-->
+        </section><!--INICIO SOBREMIM-->
+
+        <div class="imgprincipal">
+          <img src="elementos/minhafotopretawebp.webp" alt="minhafotoprincipal">
+        </div>
 
         <div class="circle"><!--INICIO CIRCLE-->
           <div class="logoc"><!--INICIO LOGOC-->
@@ -188,7 +192,7 @@
 
     <section class="sobre" id="Sobre"><!--INICIO SOBRE-->
         <div class="sobre1"><!--INICIO SOBRE1-->
-            <img alt="mão sobre" src="elementos/hand-waving.svg">
+            <img alt="mão sobre" ref={maosobre} src="elementos/hand-waving.svg">
             <p><span>Olá!</span> me chamo Miguel juan, sou Engenheiro de Software e Analista e Desenvolvedor de Sistemas, sou freelancer profissional atuando na área de desenvolvimento de sites baseados em conceitos de UI/UX Design, entretanto, também faço automatizações de tarefas, Análise de Dados e crio IA ( Inteligência Artificial ) além de ocasionais trabalhos como Hacker Ético.</p>
         </div><!--FIM SOBRE1-->
 
@@ -388,5 +392,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <link:jsx src="gsap.jsx"></link:jsx>
 </body>
 </html> <span>-</span>  

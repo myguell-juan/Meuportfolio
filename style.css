@@ -79,6 +79,7 @@ header.rolagem{
 
 .sobremim{
     color: #000000;
+    margin: 5%;
 }
 
 .txt{
@@ -92,7 +93,7 @@ header.rolagem{
 
 .txt span::before{
     content: "";
-    color: #ff0000;
+    color: #c90a02;
     animation: palavras 20s infinite;
 }
 
@@ -121,11 +122,24 @@ header.rolagem{
 }
 
 .slogan:hover{
-    color: #ff0000;
+    color: #c90a02;
     cursor: pointer;
 }
 
 /* __MAIN__ */
+
+.imgprincipal{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 1%;
+    margin-top: 8%;
+}
+
+.imgprincipal img{
+    width: 550px;
+}
 
 .principal{
     display: flex;
@@ -133,6 +147,12 @@ header.rolagem{
     align-items: center;
     height: 95vh;
     background-color: #fff;
+    gap: 10%;
+}
+
+.principal .imgprincipal{
+    display: flex;
+    align-items: self-end;
 }
 
 .h2principal{
@@ -184,7 +204,7 @@ header.rolagem{
 }
 
 .sobre1 span{
-    color: #ff0000;
+    color: #c90a02;
     font-size: 25px;
 }
 
@@ -219,14 +239,14 @@ header.rolagem{
 }
 
 .formtxt span{
-    color: #ff0000;
+    color: #c90a02;
     font-size: 25px;
 }
 
 .sobre1 img{
     width: 20%;
     border-radius: 20px;
-    border: 2.5px solid #ff0000;
+    border: 2.5px solid #c90a02;
 }
 
 .sobre2{
@@ -238,14 +258,14 @@ header.rolagem{
 }
 
 .sobre2 span{
-    color: #ff0000;
+    color: #c90a02;
     font-size: 25px;
 }
 
 .sobre2 img{
     width: 20%;
     border-radius: 20px;
-    border: 2.5px solid #ff0000;
+    border: 2.5px solid #c90a02;
 }
 
 .sobre3{
@@ -256,7 +276,7 @@ header.rolagem{
 }
 
 .sobre3 span{
-    color: #ff0000;
+    color: #c90a02;
     font-size: 25px;
 }
 
@@ -269,7 +289,7 @@ header.rolagem{
     padding: 10px 20px;
     border-radius: 7px;
     user-select: none;
-    border: 2px solid #ff0000;
+    border: 2px solid #c90a02;
   }
   
   .container-skills .skill-box {
@@ -281,7 +301,7 @@ header.rolagem{
     display: block;
     font-size: 14px;
     font-weight: 600;
-    color: #FF0000;
+    color: #c90a02;
   }
   
   .skill-box .skill-bar {
@@ -370,7 +390,7 @@ header.rolagem{
 
 .projetos{
     height: 100vh;
-    background-color: #ff0000;
+    background-color: #c90a02;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -399,7 +419,7 @@ header.rolagem{
 .container {
     height: 294px;
     width: 240px;
-    color: #FF0000;
+    color: #c90a02;
     perspective: 800px;
     display: none;
   }
@@ -423,11 +443,11 @@ header.rolagem{
     /* position: absolute; */
     width: 50%;
     background-color: transparent;
-    border: 2px solid #ff0000;
+    border: 2px solid #c90a02;
     top: 0;
     border-top: none;
     border-radius: 0 0 1rem 1rem;
-    box-shadow: (0px 0px 10px 5px #ff0000);
+    box-shadow: (0px 0px 10px 5px #c90a02);
   }
   
   .card-top-para {
@@ -444,9 +464,9 @@ header.rolagem{
   .back {
     height: 100%;
     width: 100%;
-    border: #ff0000 solid 2px;
+    border: #c90a02 solid 2px;
     border-radius: 2rem;
-    box-shadow: 0px 0px 10px 5px #ff0000;
+    box-shadow: 0px 0px 10px 5px #c90a02;
     position: absolute;
     backface-visibility: hidden;
     display: flex;
@@ -504,7 +524,7 @@ header.rolagem{
   }
 
   .contatodesk h2 span{
-    color: #ff0000;
+    color: #c90a02;
     font-weight: 600;
   }
 
@@ -546,11 +566,11 @@ header.rolagem{
     height: 30px;
     font-weight: 600;
     color: #fff;
-    background-color: #ff0000;
+    background-color: #c90a02;
   }
 
   .label{
-    color: #ff0000;
+    color: #c90a02;
   }
 
   .contatoil{
@@ -809,6 +829,13 @@ header.rolagem{
         flex-direction: column-reverse;
     }
 
+    .imgprincipal{
+        display: none;
+    }
+    .imgprincipal img{
+        display: none;
+    }
+
     .circle{
         position: relative;
         width: 170px;
@@ -852,7 +879,7 @@ header.rolagem{
     .ola{
         margin-right: 64px;
         position: relative;
-        color: red;
+        color: #c90a02;
     }
 
     .h2principal{
@@ -860,7 +887,7 @@ header.rolagem{
     }
 
     .h2principal span{
-        color: #ff0000;
+        color: #c90a02;
     }
 
     .tec22{
@@ -876,17 +903,20 @@ header.rolagem{
 
     .sobre1{
         margin-top: 15%;
-        gap: 10%;
+        gap: 20%;
+        flex-direction: column;
     }
 
     .sobre2{
         margin-top: 15%;
-        gap: 10%;
+        gap: 20%;
+        flex-direction: column-reverse;
     }
 
     .sobre3{
         margin-top: 15%;
-        gap: 10%;
+        gap: 20%;
+        flex-direction: column-reverse;
     }
 
     .contairner-skills{
