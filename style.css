@@ -635,7 +635,10 @@ header.rolagem{
   }
 
   #meiopreto{
-    animation: loader 2s linear ease-in-out infinite;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    animation: loader 2s linear;
   }
 
 
@@ -710,13 +713,14 @@ header.rolagem{
     }
   }
 
-@keyframes loader{
-    0%{
-        transform: rotateY(0deg);
-    }100%{
-        trasnform: rotateY(360deg)
+  @keyframes loader {
+    from {
+      transform: rotate(0deg);
     }
-}
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 /* ___TAMANHOS DE TELA___ */
 
@@ -829,6 +833,10 @@ header.rolagem{
         flex-direction: column-reverse;
     }
 
+    .principal{
+        gap: 0;
+    }
+
     .imgprincipal{
         display: none;
     }
@@ -840,7 +848,7 @@ header.rolagem{
         position: relative;
         width: 170px;
         height: 170px;
-        border-radius: 50%;
+        border-radius: 20%;
         background: #fff;
         display: flex;
         justify-content: center;
@@ -849,9 +857,9 @@ header.rolagem{
 
     .logoc{
         position: absolute;
-        width: 150px;
-        height: 150px;
-        background: url('elementos/minhafoto.webp');
+        width: 170px;
+        height: 170px;
+        background: url('elementos/minhafotopretawebp.png');
         background-size: cover;
         border-radius: 50%;
     }
@@ -866,9 +874,9 @@ header.rolagem{
     .textc span{
         position: absolute;
         left: 50%;
-        top: -6%;
+        top: -8%;
         font-size: 0.8em;
-        transform-origin: 0 85px;
+        transform-origin: 0 90px;
         color: rgb(0, 0, 0);
     }
 
@@ -877,7 +885,7 @@ header.rolagem{
     }
 
     .ola{
-        margin-right: 64px;
+        margin-right: 60px;
         position: relative;
         color: #c90a02;
     }
