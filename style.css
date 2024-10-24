@@ -131,8 +131,8 @@ header.rolagem{
 .imgprincipal{
     width: 80%;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
     margin: 1%;
     margin-top: 8%;
 }
@@ -665,10 +665,10 @@ header.rolagem{
         content: "Hacker!";
     }
     61%,80%{
-        content: "Dev FullStack!";
+        content: "FullStack!";
     }
     81%,100%{
-        content: "Analista!";
+        content: "Designer UI/UX!";
     }
 }
 
