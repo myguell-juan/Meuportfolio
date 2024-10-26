@@ -146,7 +146,7 @@ header.rolagem{
     justify-content: center;
     align-items: center;
     height: 95vh;
-    background-color: #fff;
+    background: #fff;
     gap: 10%;
 }
 
@@ -201,6 +201,7 @@ header.rolagem{
 }
 
 .sobre{
+    background: #000;
     color: #FFF;
     display: flex;
     height: 110vh;
