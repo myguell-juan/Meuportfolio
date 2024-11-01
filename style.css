@@ -551,6 +551,11 @@ header.rolagem{
     animation: loader 2s linear;
   }
 
+  #meiovermelho{
+    position: relative;
+    animation: loader-inverso 2s linear;
+  }
+
 
 /* ___ANIMAÇÕES___ */
 
@@ -629,6 +634,15 @@ header.rolagem{
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  @keyframes loader-inverso {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
     }
   }
 
