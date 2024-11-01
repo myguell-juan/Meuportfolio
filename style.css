@@ -200,6 +200,11 @@ header.rolagem{
     animation: passandor 18s infinite linear;
 }
 
+.formacoes span{
+    color: #c90a02;
+    font-weight: 700;
+}
+
 .sobre{
     background: #000;
     color: #FFF;
