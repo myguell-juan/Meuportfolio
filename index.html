@@ -29,7 +29,7 @@
   </script>
 
   <!-- favicon -->
-  <link alt="favicon" rel="shortcut icon" href="elementos/minha-logobranca.png" type="image/x-icon">
+  <link alt="favicon" rel="shortcut icon" href="elementos/minha-logobranca.webp" type="image/x-icon">
 
 <body>
 
@@ -221,7 +221,183 @@
 
     <section class="projetos" id="Projetos"><!--INICIO PROJETOS-->
 
-      <h1>PROJETOS</h1>
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="elementos/gregopaisagem.webp">
+                <div class="content">
+                    <div class="author">migueljuandev</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="elementos/Jarvis.webp">
+                <div class="content">
+                    <div class="author">migulejuandev</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <a href="https://j-a-r-v-i-s-js.vercel.app/"><button>SEE MORE</button></a>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="elementos/flower.webp">
+                <div class="content">
+                    <div class="author">migueljuandev</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="elementos/PSX_20241014_162628.webp">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                let nextDom = document.getElementById('next');
+                let prevDom = document.getElementById('prev');
+                          
+                let carouselDom = document.querySelector('.carousel');
+                let sliderDom = document.querySelector('.carousel .list');
+                let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+                let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+                let timeDom = document.querySelector('.carousel .time');
+
+                thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+                let timeRunning = 3000;
+                let timeAutoNext = 7000;
+
+                nextDom.onclick = function() {
+                    showSlider('next');
+                };
+
+                prevDom.onclick = function() {
+                    showSlider('prev');
+                };
+
+                let runTimeOut;
+                let runNextAuto = setTimeout(() => {
+                    nextDom.click();
+                }, timeAutoNext);
+
+                function showSlider(type) {
+                    let sliderItemsDom = sliderDom.querySelectorAll('.item');
+                    let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+        
+                    if (type === 'next') {
+                        sliderDom.appendChild(sliderItemsDom[0]);
+                        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+                        carouselDom.classList.add('next');
+                    } else {
+                        sliderDom.prepend(sliderItemsDom[sliderItemsDom.length - 1]);
+                        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+                        carouselDom.classList.add('prev');
+                    }
+
+                    clearTimeout(runTimeOut);
+                    runTimeOut = setTimeout(() => {
+                        carouselDom.classList.remove('next');
+                        carouselDom.classList.remove('prev');
+                   }, timeRunning);
+
+                    clearTimeout(runNextAuto);
+                    runNextAuto = setTimeout(() => {
+                        nextDom.click();
+                    }, timeAutoNext);
+                }
+            });
+
+          </script>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="elementos/gregopaisagem.webp">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="elementos/flower.webp">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="elementos/Jarvis.webp">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="elementos/grego.webp">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
 
     </section><!--FIM PROJETOS-->
 
