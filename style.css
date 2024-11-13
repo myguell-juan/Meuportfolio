@@ -357,10 +357,6 @@ header.rolagem{
     opacity: 0;
 }
 
-
-
-
-
 .list .item .content{
     position: absolute;
     top: 50%;
@@ -408,7 +404,7 @@ header.rolagem{
     animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
 
-.content .btn{
+.content .btn {
     margin-left: 5px;
 
     opacity: 0;
@@ -425,10 +421,12 @@ header.rolagem{
 
 .content .btn button:nth-child(1){
     margin-right: 15px;
+    border-radius: 10px;
 }
 
 .content .btn button:nth-child(2){
     background: transparent;
+    border-radius: 10px;
     color: #c90a02;
     border: 2px solid #fff;
     transition: 0.3s;
@@ -703,6 +701,11 @@ header.rolagem{
     justify-content: center;
     flex-direction: column;
     gap: -10rem;
+  }
+
+  .carregamento{
+    display: grid;
+    place-items: center;
   }
 
   #svg{
@@ -1115,6 +1118,18 @@ header.rolagem{
     }
 
     /* __PROJETOS-MOBILE__ */
+
+    .content{
+        margin-left: -10%;
+    }
+
+    .des{
+        container: "";
+        width: 85%;
+        padding: 10px;
+        background: #00000047;
+        border-radius: 20px;
+    }
 
     /* __CONTATO__ */
 
